@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% assign casename = page.casename %}
+{% assign index = 0 %}
+
+<div id="head">
+  <div id="title">{{ casename }}</div>
+  <div id="status">
+    <span class="statu"><i>全部</i></span>
+    <span class="statu"><i>读过</i></span>
+    <span class="statu"><i>想读</i></span>
+  </div>
+</div>
+
+<div id="book_items">
+  {% for post in site.posts %}
+  {% if post.casename == casename %}
+  <div class="book_item {{ post.status }}">
+    <div class="book_info">
+      <p class="bookname">{{ post.title }}</p>
+      <p class="author">作者: {{ post.author[0] }}{% if post.author.size > 0 %}--{% endif %}</p>
+      <p class="publish_company">出版社: {{ post.publish_company }}</p>
+      <p class="publish_date">发行: {{ post.publish_date }} | 第{% if post.publish_version.size > 0 %}{{ post.publish_version }}{% else %}1{% endif %}版</p>
+      <p class="tag">标签: {% for tag in post.tag %}{{ tag }}  {% endfor %}</p>
+    </div>
+    <img class="cover" src={{ post.cover_path }}>
+    <div class="clearboth"></div>
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+<script>
+  var getAll = function(){
+    
+  }
+  
+  var getHaveRead = function(){
+    
+  }
+  
+  var getWantRead = function(){
+    
+  }
+  
+  
+</script>

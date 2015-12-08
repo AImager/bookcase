@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url(/media/fonts/telex-regular.css);
+
+body {
+  width: 700px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-family: "telexregular", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  background-color: #f9f9f9;
+}
+
+#head {
+  text-align: center;
+}
+
+
+#title {
+  font-size: 1.7em;
+  color: #555;
+  margin: 40px 0 0px 0;
+}
+
+
+
+#status {
+  margin: 0 0 30px 0;
+  color: #bbb;
+}
+
+#status i {
+  font-style: normal;
+  font-size: 12px;
+}
+
+.statu i:hover {
+  color: #dd1144;
+}
+
+
+.cover {
+  float: right;
+  width: 120px;
+  margin: 10px 0px;
+}
+
+.bookcase {
+  text-decoration: none;
+  color: #909090;
+}
+
+.bookcase:hover {
+  color: #dd1144;
+}
+
+.clearboth {
+  clear: both;
+  margin-bottom: 20px;
+}
+
+.home_tag_div {
+  margin-left: 20px;
+}
+
+.home_tag {
+  border: 1px dashed #ccc;
+  color: #ccc;
+  border-radius: 3px;
+  padding: 1px;
+  margin: 0 6px;
+  line-height: 2.2em;
+  white-space:nowrap;
+}
+
+.tag {
+  font-size: 14px;
+  color: #bb2222;
+  
+}
+
+
+
+.book_info {
+  float: left;
+  margin: 0px 0px;
+}
+
+.bookname {
+  color: #555;
+  font-size: 14px;
+  margin-bottom: -8px;
+}
+
+.author, .publish_company, .publish_date, .tag {
+  color: #aaa;
+  font-size: 12px;
+  margin-bottom: -10px;
+}
+
+
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #909090;
+  margin: 30px 0;
+}
+
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #dd1144;
+  
+}
+
+@media screen and (max-width: 1023px) {
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+}
+
+@media screen and (min-width: 1024px) {
+body {
+  width: 700px;
+  margin: 0 auto;
+}
+}
