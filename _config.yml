@@ -4,8 +4,8 @@ highlighter: pygments
 permalink: /:title.html
 name: "AImager"
 
-author: "aimager"
-atom-baseurl: "http://aimager.com"
+#author: "aimager"
+#atom-baseurl: "http://aimager.com"
 disqus: "gopherwood"
 encoding: utf-8
 
