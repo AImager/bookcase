@@ -22,7 +22,7 @@ layout: default
       <p class="bookname">{{ post.title }}</p>
       <p class="author">作者: {{ post.author[0] }}{% if post.author.size > 1 %} ~{% endif %}</p>
       <p class="publish_company">出版社: {{ post.publish_company }}</p>
-      <p class="publish_date">发行: {{ post.publish_date }} | 第{% if post.publish_version.size > 0 %}{{ post.publish_version }}{% else %}1{% endif %}版</p>
+      <p class="publish_date">发行: {{ post.publish_date }} | {{ post.publish_version }}</p>
       <p class="tag">标签: {% for tag in post.tag %}{{ tag }}  {% endfor %}</p>
     </div>
     <img class="cover" src={{ post.cover_path }}>
