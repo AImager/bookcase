@@ -8,19 +8,19 @@ layout: default
 <div id="head">
   <div id="title">{{ casename }}</div>
   <div id="status">
-    <span class="statu"><i>全部</i></span>
-    <span class="statu"><i>读过</i></span>
-    <span class="statu"><i>想读</i></span>
+    <span class="statu" id="book_all"><i>全部</i></span>
+    <span class="statu" id="book_has_read"><i>读过</i></span>
+    <span class="statu" id="book_want_read"><i>想读</i></span>
   </div>
 </div>
 
 <div id="book_items">
   {% for post in site.posts %}
   {% if post.casename == casename %}
-  <div class="book_item {{ post.status }}">
+  <div class="book_item {{ post.read_status }}">
     <div class="book_info">
       <p class="bookname">{{ post.title }}</p>
-      <p class="author">作者: {{ post.author[0] }}{% if post.author.size > 0 %}--{% endif %}</p>
+      <p class="author">作者: {{ post.author[0] }}{% if post.author.size > 1 %} ~{% endif %}</p>
       <p class="publish_company">出版社: {{ post.publish_company }}</p>
       <p class="publish_date">发行: {{ post.publish_date }} | 第{% if post.publish_version.size > 0 %}{{ post.publish_version }}{% else %}1{% endif %}版</p>
       <p class="tag">标签: {% for tag in post.tag %}{{ tag }}  {% endfor %}</p>
@@ -34,16 +34,30 @@ layout: default
 
 <script>
   var getAll = function(){
-    
+    var node = document.querySelectorAll(".book_item");
+    for(var i=0;i<node.length;i++){
+      node[i].style.display="";
+    }
   }
   
   var getHaveRead = function(){
-    
+    getAll();
+    var node = document.querySelectorAll(".想读");
+    for(var i=0;i<node.length;i++){
+      node[i].style.display="none";
+    }
   }
   
   var getWantRead = function(){
-    
+    getAll();
+    var node = document.querySelectorAll(".读过");
+    for(var i=0;i<node.length;i++){
+      node[i].style.display="none";
+    }
   }
+  document.getElementById("book_all").addEventListener("click", getAll);
+  document.getElementById("book_has_read").addEventListener("click", getHaveRead);
+  document.getElementById("book_want_read").addEventListener("click", getWantRead);
   
   
 </script>
