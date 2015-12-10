@@ -1,5 +1,6 @@
 ---
 layout: default
+title: AImager
 ---
 
 <div id="head">
