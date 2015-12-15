@@ -21,8 +21,8 @@ layout: default
     <div class="book_info">
       <p class="bookname"><a class="douban_title" href={{ post.douban_url }}>{{ post.title }}</a></p>
       <p class="author">作者: {{ post.author[0] }}{% if post.author.size > 1 %} ~{% endif %}</p>
-      <p class="publish_company">出版社: {{ post.publish_company }}</p>
-      <p class="publish_date">发行: {{ post.publish_date }} | {{ post.publish_version }}</p>
+      <p class="publish_company">出版社: {% if post.publish_company[0].size > 1 %}{{ post.publish_company[0] }}{% else %}{{ post.publish_company }}{% endif %}</p>
+      <p class="publish_date">发行: {{ post.publish_date }} | {% if post.publish_version.size > 1 %}{{ post.publish_version }}{% else %}第1版{% endif %}</p>
       <p class="tag">标签: {% for tag in post.tag %}{{ tag }}  {% endfor %}</p>
     </div>
     <img class="cover" src={{ post.cover_path }}>
