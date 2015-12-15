@@ -2,6 +2,22 @@
 
 @import url(/media/fonts/telex-regular.css);
 
+::selection {
+  color: #fff;
+  background-color: #777; 
+}
+
+::-moz-selection {
+  color: #fff;
+  background-color: #777; 
+}
+
+::-webkit-selection {
+  color: #fff;
+  background-color: #777; 
+}
+
+
 body {
   width: 700px;
   margin: 0 auto;
@@ -18,7 +34,7 @@ body {
 #title {
   font-size: 1.7em;
   color: #555;
-  margin: 40px 0 0px 0;
+  margin: 40px 0 3px 0;
 }
 
 
