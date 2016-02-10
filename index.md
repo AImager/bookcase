@@ -11,18 +11,18 @@ title: AImager
 {% assign bookcase =  site.posts | group_by: "casename" | sort: "name" %}
 {% for item in bookcase %}
   <p><a href="/{{ item.items[0].isbn }}.html" class="bookcase">{{ item.name }}</a></p>
-  
+
   <div class="home_tag_div">
   {% for tag in site.tags %}
   {% assign index = 0 %}
   {% for post in tag[1] %}
   {% if post.casename == item.name and index == 0 %}
   {% assign index = 1 %}
-  <span class="home_tag">{{ tag }}</span>
+  <span class="home_tag">{{ tag[0] }}</span>
   {% endif %}
   {% endfor %}
   {% endfor %}
-  
+
   </div>
 {% endfor %}
 </div>
