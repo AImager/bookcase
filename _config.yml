@@ -1,5 +1,7 @@
-markdown: rdiscount
-highlighter: pygments
+#markdown: rdiscount
+markdown: kramdown
+#highlighter: pygments
+highlighter: rouge
 # permalink: /:year/:month/:day/:title.html
 permalink: /:title.html
 name: "AImager"
