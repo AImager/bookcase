@@ -1,3 +1,3 @@
-# AImager's Bookcase
+# aimager's bookcase
 
-这是AImager的书库
+这是aimager的书库
