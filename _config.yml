@@ -1,37 +1,10 @@
 #markdown: rdiscount
 markdown: kramdown
-#highlighter: pygments
-highlighter: rouge
 # permalink: /:year/:month/:day/:title.html
 permalink: /:title.html
 name: "Library"
 
 author: "aimager"
-#atom-baseurl: "http://aimager.com"
-disqus: "gopherwood"
 encoding: utf-8
 
-collections:
-  nagging:
-    output: true
-  wiki:
-    output: true
-
 footer: "| <a href='http://blog.aimager.com'>blog</a>"
-
-navigations:
-  - title: Nagging
-    class: fa fa-comment-o
-    href: /nagging.html
-  - title: Wiki
-    class: fa fa-wiki
-    href: /wiki.html
-  - title: Archive
-    class: fa fa-list-ul
-    href: /archive.html
-  - title: Tags
-    class: fa fa-tags
-    href: /tags.html
-  - title: About
-    class: fa fa-user
-    href: /about.html
