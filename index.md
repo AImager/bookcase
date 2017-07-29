@@ -4,7 +4,7 @@ title: AImager
 ---
 
 <div id="head">
-  <div id="main_title">Library</div>
+  <div id="main_title">{{ site.name }}</div>
 </div>
 
 <div>

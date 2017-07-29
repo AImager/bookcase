@@ -4,9 +4,9 @@ markdown: kramdown
 highlighter: rouge
 # permalink: /:year/:month/:day/:title.html
 permalink: /:title.html
-name: "AImager"
+name: "Library"
 
-#author: "aimager"
+author: "aimager"
 #atom-baseurl: "http://aimager.com"
 disqus: "gopherwood"
 encoding: utf-8
@@ -16,6 +16,8 @@ collections:
     output: true
   wiki:
     output: true
+
+footer: "| <a href='http://blog.aimager.com'>blog</a>"
 
 navigations:
   - title: Nagging
