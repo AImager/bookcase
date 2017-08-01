@@ -8,3 +8,35 @@ author: "aimager"
 encoding: utf-8
 
 footer: "| <a href='http://blog.aimager.com'>blog</a>"
+
+theme_name: "exhibit"
+theme_dir: "theme"
+layouts_dir: "_theme/exhibit/_layouts" 
+
+collections:
+  exhibit:
+    output: true
+  theme:
+    output: true
+
+status: [读过, 想读]
+
+
+exhibit_attrs: 
+  - index: author
+    prefix: 作者
+    type: tailor
+  - index: publish_company
+    prefix: 出版社
+    type: tailor
+  - index: publish_date
+    prefix: 发行时间
+    type: normal
+  - index: publish_version
+    prefix: 版本
+    type: normal
+  - index: tags
+    prefix: 标签
+    type: normal
+
+    
