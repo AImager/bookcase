@@ -1,3 +1,4 @@
 [submodule "_theme/exhibit"]
 	path = _theme/exhibit
 	url = https://github.com/AImager/exhibit.git
+	ignore = all
