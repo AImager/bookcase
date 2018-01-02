@@ -1,27 +1,28 @@
-#markdown: rdiscount
-markdown: kramdown
-# permalink: /:year/:month/:day/:title.html
-permalink: /:title.html
-
 name: "Bookcase"
-
 author: "aimager"
+markdown: kramdown
+permalink: /:title.html
 encoding: utf-8
 
-footer: "| <a href='http://blog.aimager.com'>blog</a>"
+# plugin
+plugins:
+  - jekyll-seo-tag
 
+# custom
 theme_name: "exhibit"
 theme_dir: "theme"
 layouts_dir: "_theme/exhibit/_layouts" 
+status: [读过, 想读]
+footer: "| <a href='http://blog.aimager.com'>blog</a>"
+google-site-verfication: O_S8PGg7ST_LpvcgqqxqNVi-YhttDZ8gNoM1__BMQnE
+baidu-site-verfication: lvkqTBHPbh
 
+# array custom
 collections:
   exhibit:
     output: true
   theme:
     output: true
-
-status: [读过, 想读]
-
 
 exhibit_attrs: 
   - index: author
@@ -39,5 +40,3 @@ exhibit_attrs:
   - index: tags
     prefix: 标签
     type: normal
-
-    
