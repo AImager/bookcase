@@ -11,9 +11,10 @@ plugins:
 # custom
 theme_name: "exhibit"
 theme_dir: "theme"
-layouts_dir: "_theme/exhibit/_layouts" 
+layouts_dir: "_theme/exhibit/layouts"
+includes_dir: "_theme/exhibit/layouts"
 status: [读过, 想读]
-footer: "| <a href='http://blog.aimager.com'>blog</a>"
+footer: "<a href='http://blog.aimager.com'>blog</a>"
 google-site-verfication: O_S8PGg7ST_LpvcgqqxqNVi-YhttDZ8gNoM1__BMQnE
 baidu-site-verfication: lvkqTBHPbh
 
@@ -24,7 +25,7 @@ collections:
   theme:
     output: true
 
-exhibit_attrs: 
+exhibit_attrs:
   - index: author
     prefix: 作者
     type: tailor
