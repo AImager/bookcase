@@ -17,6 +17,7 @@ status: [读过, 想读]
 footer: "<a href='http://blog.aimager.com'>blog</a>"
 google-site-verfication: O_S8PGg7ST_LpvcgqqxqNVi-YhttDZ8gNoM1__BMQnE
 baidu-site-verfication: lvkqTBHPbh
+icon-path: "/aimager.png"
 
 # array custom
 collections:
